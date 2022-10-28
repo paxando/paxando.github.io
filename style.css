@@ -1,0 +1,125 @@
+body{
+    background-color: #4850e2;
+    font-family: sans-serif;
+}
+
+::selection {
+    background: #ff9f0a;
+    color: #282828;
+}
+
+
+.grid-container {
+    display: grid;
+    width: 260px;
+    height: 340px;
+    grid-template-columns: [col1] 50px [col2] 50px [col3] 50px [col4] 50px [end];
+    grid-template-rows: [linha1] 50px [linha2] 50px [linha3] 50px [linha4] 50px [linha5] 50px;
+    column-gap: 8px;
+    row-gap: 8px;
+    justify-content: center;
+    align-content: center;
+    grid-column-start: 1;
+    grid-column-end: end;
+    background-color: #369384;
+    border-radius: 0px;
+    
+}
+
+.grid-body {
+    display: grid;
+    height: 600px;
+    grid-template-columns: [col1] auto [col2] auto [col3] auto [end];
+    grid-template-rows: [linha1] auto [linha2] auto [linha3] auto;
+    justify-content: top left;
+    align-content: top left;
+}
+
+.grid-visor {
+    font-size: 30px;
+    text-align: top left;
+}
+
+.input-visor {
+    color: #fcfcfc;
+    width: 210px;
+    height: 40px;
+    font-size: 38px;
+    background-color: transparent;
+    border: transparent;
+    text-align: right;
+}
+
+.visor {
+    grid-column-start: 1;
+    grid-column-end: end;
+    grid-row-start: linha1;
+    grid-row-end: 2;
+}
+
+
+
+.botao-Numero {
+    transition: 250ms;
+    background-color: #dac2e6;
+    color: black;
+    padding: 12px 0;
+    font-size: 23px;
+    text-align: top left;
+    border-radius: 9%;
+    height: 52px;
+    width: 52px;
+}
+
+.botao-Numero:hover {
+    transition: 250ms;
+    background-color: #dac2e6;
+    cursor: pointer;
+}
+
+
+
+.botao-Operacao {
+    transition: 250ms;
+    background-color: #dac2e6;
+    color: black;
+    font-weight: 400;
+    font-size: 26px;
+    text-align: top left;
+    border-radius: 9%;
+    height: 52px;
+    width: 52px;
+}
+
+.botao-Operacao:hover {
+    transition: 250ms;
+    background-color: #dac2e6;
+    cursor: pointer;
+}
+
+
+
+.botao-Resultado {
+    transition: 250ms;
+    background-color: #dac2e6;
+    color: black;
+    font-weight: 600;padding: 12px 0;
+    font-size: 20px;
+    text-align: top left;
+    border-radius: 9%;
+    height: 52px;
+    width: 52px;
+}
+
+.botao-Resultado:hover {
+    transition: 250ms;
+    background-color: #dac2e6;
+    cursor: pointer;
+}
+
+.titulo {
+    color: black;
+    font-size: 33px;
+    position: center;
+    font-style: italic;
+}

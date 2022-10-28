@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="calc.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <h1 class="titulo"><b>Calculadora</b></h1>
+    <div class="grid-body">
+        <div class="grid-container">
+
+            <div class="grid-visor visor">
+                <input class="input-visor" type="text" id="visor" value="0" readonly>
+            </div>
+
+
+            <button class="botao-Numero" value="7" onclick="Digitar(this.value)">7</button>
+            <button class="botao-Numero" value="8" onclick="Digitar(this.value)">8</button>
+            <button class="botao-Numero" value="9" onclick="Digitar(this.value)">9</button>
+            <button id="botaoDivisao" class="botao-Operacao" value="/"
+                onclick="botaoOperacao(this.value, '#botaoDivisao')">÷</button>
+
+
+            <button class="botao-Numero" value="4" onclick="Digitar(this.value)">4</button>
+            <button class="botao-Numero" value="5" onclick="Digitar(this.value)">5</button>
+            <button class="botao-Numero" value="6" onclick="Digitar(this.value)">6</button>
+            <button id="botaoMultiplicacao" class="botao-Operacao" value="*"
+                onclick="botaoOperacao(this.value, '#botaoMultiplicacao')">×</button>
+
+
+            <button class="botao-Numero" value="1" onclick="Digitar(this.value)">1</button>
+            <button class="botao-Numero" value="2" onclick="Digitar(this.value)">2</button>
+            <button class="botao-Numero" value="3" onclick="Digitar(this.value)">3</button>
+            <button id="botaoMenos" class="botao-Operacao" value="-"
+                onclick="botaoOperacao(this.value, '#botaoMenos')">-</button>
+
+
+            <button class="botao-Resultado" onclick="botaoC()">C</button>
+            <button class="botao-Numero" value="0" onclick="Digitar(this.value)">0</button>
+            <button class="botao-Resultado" onclick="botaoIgual()">=</button>
+            <button id="botaoMais" class="botao-Operacao" value="+"
+                onclick="botaoOperacao(this.value, '#botaoMais')">+</button>
+        </div>
+    </div>
+</body>
+
+</html>
